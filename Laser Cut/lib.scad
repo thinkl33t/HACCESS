@@ -26,7 +26,9 @@ module rfid()
     {
         color("DarkBlue") translate([0,0,-2]) cube([60, 40, 1.6], center=true);
         for(y = [30/2, -30/2])
-            translate([20,y]) color("Grey") cylinder(r=2.5/2, h=100, center=true);
+            translate([20,y]) color("Grey") cylinder(r=3/2, h=100, center=true); // THIS IS A GUESSTIMATE
+        for(y = [20/2, -20/2])
+            translate([-10,y]) color("Grey") cylinder(r=3/2, h=100, center=true); // THIS IS A GUESSTIMATE
     }
 }
 
