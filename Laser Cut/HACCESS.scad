@@ -10,3 +10,5 @@ translate([0,12,20]) lcd();
 translate([0,-24,23]) rotate([0,0,90]) rfid();
 translate([-62/2,15,22]) button("red");
 translate([62/2,15,22]) button("green");
+translate([-60.3/2,0,9])screw();
+translate([60.3/2,0,9])screw();

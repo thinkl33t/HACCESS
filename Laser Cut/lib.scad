@@ -1,9 +1,10 @@
 module rrect(dim=[20,20], r=10)
 {
-    minkowski()
+    hull()
     {
-        square([dim[0]-(2*r), dim[1]-(2*r)], center=true);
-        translate([a, b])circle(r=r, center=true);
+        for(a=[-dim[0]/2+r,dim[0]/2-r])
+            for(b=[-dim[1]/2+r,dim[1]/2-r])
+                translate([a, b])circle(r=r, center=true);
     }
 }
 
@@ -39,6 +40,19 @@ module button(btn_color="white")
     {
         translate([0,0,-3]) cube([6,6,6], center=true);
         translate([0,0,-5]) cube([12,12,5], center=true);
+    }
+}
+
+module screw(length=35)
+{
+    color("darkgrey") difference ()
+    {
+        union()
+        {
+            cylinder(r=3.5/2, h=length, center=true);
+            translate([0,0,length/2-2]) cylinder(r2=6/2, r1=3.5/2, h=4, center=true);
+        }
+        translate([0,0,length/2]) cube([6,1,1], center=true);
     }
 }
 
