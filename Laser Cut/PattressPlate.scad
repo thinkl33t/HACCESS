@@ -35,4 +35,4 @@ module pcbplate ()
     }
 }
 
-pplate();
+color("red") pplate();
