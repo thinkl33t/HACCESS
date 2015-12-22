@@ -15966,13 +15966,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="60.96" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!RST" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="/RST"/>
-<wire x1="111.76" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
-<label x="104.14" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="IN_R" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GP0"/>
@@ -16025,14 +16018,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="!OUT_RESET_PERIPH" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GP4"/>
-<wire x1="142.24" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
-<label x="149.86" y="124.46" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="LCD1" gate="G$1" pin="/RES"/>
 <wire x1="71.12" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
 <label x="63.5" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="15"/>
+<wire x1="22.86" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
+<label x="60.96" y="152.4" size="1.27" layer="95" xref="yes"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<junction x="43.18" y="152.4"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="/RST"/>
+<wire x1="111.76" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<label x="104.14" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="OUT_STATUS_LED" class="0">
@@ -16043,13 +16044,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="38.1" y="30.48" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="15"/>
-<wire x1="22.86" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<label x="60.96" y="152.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
-<junction x="43.18" y="152.4"/>
-<wire x1="43.18" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GP4"/>
+<wire x1="142.24" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
+<label x="149.86" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT_OPTO" class="0">
