@@ -15438,10 +15438,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805K" value="100nF"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="BL1" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="BL1" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="22R"/>
-<part name="BL2" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="BL3" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="BL2" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="BL3" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="BL4" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
@@ -16036,7 +16036,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="104.14" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="OUT_STATUS_LED" class="0">
+<net name="OUT_STATUS_LED" class="1">
 <segment>
 <pinref part="STATUS" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="35.56" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
@@ -16099,7 +16099,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="144.78" y="71.12"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="1">
 <segment>
 <pinref part="STATUS" gate="G$1" pin="A"/>
 <pinref part="R12" gate="G$1" pin="2"/>
